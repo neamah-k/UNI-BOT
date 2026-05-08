@@ -1,0 +1,535 @@
+[
+  {
+    "id": "Admission Information_001",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Admission Information",
+    "keywords": [
+      "admission",
+      "university",
+      "strictly",
+      "based",
+      "merit",
+      "there",
+      "quotas",
+      "reserved"
+    ],
+    "text": "Admission to the university is strictly based on merit. There are no quotas, reserved seats, or admissions through donation. There is also no age limit for applicants."
+  },
+  {
+    "id": "Admission Information_002",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Merit is determined through either",
+    "keywords": [
+      "university",
+      "admission",
+      "test"
+    ],
+    "text": "The university\u2019s own admission test, or"
+  },
+  {
+    "id": "Admission Information_003",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "An equivalent test conducted by a recognized organization",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_004",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Foreign Nationals",
+    "keywords": [
+      "time",
+      "admission",
+      "foreign",
+      "nationals",
+      "submit",
+      "objection",
+      "certificate",
+      "ministry"
+    ],
+    "text": "At the time of admission, foreign nationals must submit a No Objection Certificate (NOC) from the Ministry of Federal Education and Professional Training."
+  },
+  {
+    "id": "Admission Information_005",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Applicants can apply using the following tests",
+    "keywords": [
+      "within",
+      "last",
+      "months",
+      "bachelor",
+      "programs",
+      "subject",
+      "general"
+    ],
+    "text": "NTS-NAT (within last 6 months) \u2192 Bachelor programs\nGAT Subject \u2192 MS, MBA, PhD programs\nSAT \u2192 Bachelor programs\nGRE (General) \u2192 MS, MBA programs\nGRE (Subject) \u2192 PhD programs"
+  },
+  {
+    "id": "Admission Information_006",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Candidates Awaiting Results",
+    "keywords": [
+      "students",
+      "awaiting",
+      "level",
+      "results",
+      "apply"
+    ],
+    "text": "Students awaiting FA/FSc/A-Level results may apply."
+  },
+  {
+    "id": "Admission Information_007",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Admission will be provisional",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_008",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Must pass required exams to confirm admission",
+    "keywords": [
+      "failed",
+      "admission",
+      "cancelled"
+    ],
+    "text": "If failed \u2192 admission is cancelled"
+  },
+  {
+    "id": "Admission Information_009",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Tuition fee refunded as per HEC policy",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_010",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Students must",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_011",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Inform the university immediately after results",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_012",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Submit refund application if needed",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_013",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Admission Procedure",
+    "keywords": [
+      "fill",
+      "application",
+      "form",
+      "online",
+      "admissions"
+    ],
+    "text": "Fill the application form online at: admissions.nu.edu.pk"
+  },
+  {
+    "id": "Admission Information_014",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "A unique Application Reference Number (ARN) is generated",
+    "keywords": [
+      "application",
+      "additional",
+      "campus",
+      "choice",
+      "test",
+      "type"
+    ],
+    "text": "Pay application fee: Rs. 3000\nAdditional campus choice: Rs. 500 per campus\nAdditional test type: Rs. 500 per test"
+  },
+  {
+    "id": "Admission Information_015",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Deposit fee in designated bank (non-refundable)",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_016",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Confirm all entered information is correct",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_017",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Print Admit Card after payment",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_018",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Bring admit card to test center (mandatory)",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_019",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "NU Online Admission Test (NU-OAT)",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_020",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Conducted on computer",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_021",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Candidate must know basic mouse/keyboard usage",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_022",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Each candidate receives a different test",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_023",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Sections appear in random order",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_024",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Questions also appear randomly",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_025",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Rules",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_026",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Can move within a section and change answers",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_027",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Must arrive on time (late entry not allowed)",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_028",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Bring only Admit Card",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_029",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Test held at campuses",
+    "keywords": [
+      "karachi",
+      "lahore",
+      "islamabad",
+      "peshawar",
+      "multan",
+      "chiniot",
+      "faisalabad"
+    ],
+    "text": "Karachi, Lahore, Islamabad, Peshawar, Multan, Chiniot-Faisalabad"
+  },
+  {
+    "id": "Admission Information_030",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "MS Engineering Test Composition",
+    "keywords": [
+      "essay",
+      "writing",
+      "analytical",
+      "skills",
+      "advanced",
+      "math",
+      "specialization",
+      "area"
+    ],
+    "text": "Essay Writing \u2192 10%\nAnalytical Skills & IQ \u2192 20%\nAdvanced Math \u2192 10%\nSpecialization Area \u2192 40%\nQuantitative Methods \u2192 20%"
+  },
+  {
+    "id": "Admission Information_031",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "MBA Test Composition",
+    "keywords": [
+      "english",
+      "essay",
+      "writing",
+      "analytical",
+      "skills",
+      "quantitative",
+      "methods",
+      "business"
+    ],
+    "text": "English \u2192 10%\nEssay Writing \u2192 30%\nAnalytical Skills & IQ \u2192 20%\nQuantitative Methods \u2192 20%\nBusiness Knowledge \u2192 20%"
+  },
+  {
+    "id": "Admission Information_032",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Merit Calculation",
+    "keywords": [
+      "merit",
+      "lists",
+      "prepared",
+      "separately",
+      "each",
+      "campus"
+    ],
+    "text": "Merit lists are prepared separately for each campus."
+  },
+  {
+    "id": "Admission Information_033",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "For BBA & BS programs",
+    "keywords": [
+      "admission",
+      "test",
+      "hssc",
+      "matric"
+    ],
+    "text": "Admission Test \u2192 50%\nFSc (HSSC) \u2192 40%\nMatric (SSC) \u2192 10%"
+  },
+  {
+    "id": "Admission Information_034",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Engineering Merit",
+    "keywords": [
+      "admission",
+      "test",
+      "matric"
+    ],
+    "text": "Admission Test \u2192 33%\nFSc \u2192 50%\nMatric \u2192 17%"
+  },
+  {
+    "id": "Admission Information_035",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Admission Test Structure (Bachelor Programs)",
+    "keywords": [
+      "essay",
+      "writing",
+      "analytical",
+      "skills",
+      "basic",
+      "math"
+    ],
+    "text": "BBA, BS (BA), BS (A&F):\n\nEssay Writing \u2192 15%\nAnalytical Skills & IQ \u2192 30%\nBasic Math \u2192 55%"
+  },
+  {
+    "id": "Admission Information_036",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "BS Computing / Engineering",
+    "keywords": [
+      "analytical",
+      "skills",
+      "basic",
+      "math",
+      "advanced"
+    ],
+    "text": "Analytical Skills & IQ \u2192 20%\nBasic Math \u2192 30%\nAdvanced Math \u2192 50%"
+  },
+  {
+    "id": "Admission Information_037",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "MS Computing Test Composition",
+    "keywords": [
+      "quantitative",
+      "analytical",
+      "general",
+      "computing",
+      "essay",
+      "writing",
+      "summary"
+    ],
+    "text": "Quantitative \u2192 30%\nAnalytical \u2192 30%\nGeneral Computing \u2192 30%\nEssay Writing & Summary \u2192 10%"
+  },
+  {
+    "id": "Admission Information_038",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "General Computing Breakdown",
+    "keywords": [
+      "programming",
+      "data",
+      "structures",
+      "operating",
+      "systems",
+      "networking",
+      "databases",
+      "software"
+    ],
+    "text": "Programming/Data Structures \u2192 50%\nOperating Systems \u2192 12.5%\nNetworking \u2192 12.5%\nDatabases \u2192 12.5%\nSoftware Engineering \u2192 12.5%"
+  },
+  {
+    "id": "Admission Information_039",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Test Cancellation Policy",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_040",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "The university may cancel a test if a candidate",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_041",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Is involved in illegal activity",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_042",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Violates test rules",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_043",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Admission Results",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_044",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Selected candidates are informed via",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_045",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "SMS",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_046",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Email",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_047",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Students should also check status at",
+    "keywords": [
+      "admissions",
+      "using"
+    ],
+    "text": "admissions.nu.edu.pk\nwww.nu.edu.pk\n(using ARN)"
+  },
+  {
+    "id": "Admission Information_048",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Admission Cancellation",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_049",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Admission may be cancelled if",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_050",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Student is involved in illegal/undesirable activity",
+    "keywords": [
+      "false",
+      "documents",
+      "information",
+      "submitted"
+    ],
+    "text": "False documents or information are submitted"
+  }
+]

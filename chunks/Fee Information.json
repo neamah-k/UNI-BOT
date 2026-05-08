@@ -1,0 +1,36 @@
+[
+  {
+    "id": "Fee Information_001",
+    "source": "Fee Information.txt",
+    "category": "Fees",
+    "section": "1. One-Time Admission Charges",
+    "keywords": [
+      "admission",
+      "payable",
+      "once",
+      "time",
+      "note",
+      "graduates",
+      "fast",
+      "nuces"
+    ],
+    "text": "Admission Fee: Rs. 30,000 (payable once at the time of admission).\nNote: Graduates of FAST-NUCES admitted to a higher degree program do not pay this again.\nSecurity Deposit: Rs. 20,000 (refundable upon degree completion or closing of admission).\nApplicant Admission Fee: Rs. 3,000.\n\n2. Recurring Semester Fees\nTuition Fee (All Programs/Campuses): Rs. 11,000 per credit hour.\nStudent Activities Fund: Rs. 2,500 per semester.\nLate Payment Fine: Charged at a rate of Re 1 per day for every thousand rupees of the total outstanding balance.\n\n3. Miscellaneous Service Fees"
+  },
+  {
+    "id": "Fee Information_002",
+    "source": "Fee Information.txt",
+    "category": "Fees",
+    "section": "These fees are non-refundable",
+    "keywords": [
+      "refund",
+      "policy",
+      "refunds",
+      "tuition",
+      "student",
+      "activity",
+      "funds",
+      "follow"
+    ],
+    "text": "4. Fee Refund Policy\nRefunds for Tuition and Student Activity funds follow HEC guidelines. The Admission Fee is never refundable.\nCalculation Note: Timelines include weekends and holidays.\nEligibility Failure: If a student's admission is cancelled because they failed to meet eligibility requirements (after results), the refund timeline is calculated from the date of the result announcement."
+  }
+]

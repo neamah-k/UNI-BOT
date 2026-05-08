@@ -1,0 +1,77 @@
+[
+  {
+    "id": "Academic Rules and Regulations_001",
+    "source": "Academic Rules and Regulations.txt",
+    "category": "Rules",
+    "section": "1. Attendance Requirements",
+    "keywords": [
+      "ideal",
+      "requirement",
+      "students",
+      "should",
+      "maintain",
+      "attendance",
+      "lectures",
+      "labs"
+    ],
+    "text": "Ideal Requirement: Students should maintain 100% attendance in lectures, labs, and tutorials.\nMinimum Threshold (Undergraduate): 80%.\nMinimum Threshold (Graduate/PhD): 75%.\nCondonation: Up to 20% of total lectures can be condoned for genuine reasons like illness.\nPenalty: Failure to meet these requirements results in an F/A (Fail due to Attendance) grade and ineligibility for final exams.\n\n2. Academic Grading System\nPerformance is typically split 50% for semester work (midterms, quizzes, etc.) and 50% for final examinations."
+  },
+  {
+    "id": "Academic Rules and Regulations_002",
+    "source": "Academic Rules and Regulations.txt",
+    "category": "Rules",
+    "section": "Letter Grades & Points",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Academic Rules and Regulations_003",
+    "source": "Academic Rules and Regulations.txt",
+    "category": "Rules",
+    "section": "Special Grades",
+    "keywords": [
+      "withdrawn",
+      "impact",
+      "incomplete",
+      "converts",
+      "completed",
+      "next",
+      "semester",
+      "honors"
+    ],
+    "text": "W: Withdrawn (No GPA impact).\nI: Incomplete (Converts to F if not completed by next semester).\n\n3. Honors & Recognition\nRector\u2019s List: SGPA of 4.00 (Undergraduates only).\nDean\u2019s List: SGPA between 3.50 and 3.99."
+  },
+  {
+    "id": "Academic Rules and Regulations_004",
+    "source": "Academic Rules and Regulations.txt",
+    "category": "Rules",
+    "section": "Graduation Honors",
+    "keywords": [
+      "summa",
+      "laude",
+      "cgpa",
+      "magna",
+      "academic",
+      "warning",
+      "probation"
+    ],
+    "text": "Summa Cum Laude: CGPA 3.90 \u2013 4.00.\nMagna Cum Laude: CGPA 3.75 \u2013 3.89.\nCum Laude: CGPA 3.60 \u2013 3.74.\n\n4. Academic Warning & Probation"
+  },
+  {
+    "id": "Academic Rules and Regulations_005",
+    "source": "Academic Rules and Regulations.txt",
+    "category": "Rules",
+    "section": "Warnings are issued if CGPA falls below",
+    "keywords": [
+      "rule",
+      "three",
+      "warning",
+      "count",
+      "reaches",
+      "student",
+      "admission",
+      "closed"
+    ],
+    "text": "BS/BBA: 2.00.\nMS/MBA: 2.50.\nPhD: 3.00.\nRule of Three: If the Warning Count reaches three, the student\u2019s admission is closed.\n\n5. Course Rules (FYP & Summer)\nFinal Year Project (FYP): To register for FYP-I, a student must have passed all courses from the first six semesters (deficiency of 1-2 courses may be allowed by HOD/Director).\nSummer Semester: An optional 8\u20139 week session. Maximum of 2 courses allowed. Fees are non-refundable.\n\n6. Degree Completion Limits\n\n7. Disciplinary Action\nAcademic Dishonesty: Minimum punishment is zero marks in the relevant task; maximum is an 'F' grade in the course or expulsion.\nMedium of Instruction: English is the standard for all exams, except for Religious/Islamic studies which can be answered in Urdu."
+  }
+]

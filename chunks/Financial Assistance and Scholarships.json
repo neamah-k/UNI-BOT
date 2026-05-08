@@ -1,0 +1,75 @@
+[
+  {
+    "id": "Financial Assistance and Scholarships_001",
+    "source": "Financial Assistance and Scholarships.txt",
+    "category": "Scholarships",
+    "section": "1. Internal Sponsorships (FAST-NUCES Provided)",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Financial Assistance and Scholarships_002",
+    "source": "Financial Assistance and Scholarships.txt",
+    "category": "Scholarships",
+    "section": "The university offers several forms of direct financial support",
+    "keywords": [
+      "merit",
+      "scholarship",
+      "bachelors",
+      "awarded",
+      "three",
+      "position",
+      "holders",
+      "each"
+    ],
+    "text": "Merit Scholarship for Bachelors: Awarded to the Top Three position holders of each Examination Board in their year of admission.\nSemester-Wise Merit Awards: Cash prizes and certificates are given to undergraduate students who rank in the top three of their department each semester.\nEligibility: Students must have a regular course load and an SGPA of 3.00 or higher.\nStudy Loans: Interest-free loans are arranged for bright students who cannot afford the fees."
+  },
+  {
+    "id": "Financial Assistance and Scholarships_003",
+    "source": "Financial Assistance and Scholarships.txt",
+    "category": "Scholarships",
+    "section": "Rules for Internal Sponsorships",
+    "keywords": [
+      "coverage",
+      "limited",
+      "tuition",
+      "fees",
+      "only"
+    ],
+    "text": "Coverage: Limited to tuition fees only."
+  },
+  {
+    "id": "Financial Assistance and Scholarships_004",
+    "source": "Financial Assistance and Scholarships.txt",
+    "category": "Scholarships",
+    "section": "Duration",
+    "keywords": [
+      "bachelors",
+      "maximum",
+      "semesters",
+      "masters",
+      "restrictions",
+      "cannot",
+      "used",
+      "repeat"
+    ],
+    "text": "Bachelors: Maximum of 8 semesters.\nMasters: Maximum of 4 semesters.\nPhD: Maximum of 6 semesters.\nRestrictions: Cannot be used for repeat or withdrawn courses; it only covers a course once.\nAcademic Standing: Sponsorship is suspended if a student's CGPA falls into the warning zone but is restored once the CGPA improves.\n\n2."
+  },
+  {
+    "id": "Financial Assistance and Scholarships_005",
+    "source": "Financial Assistance and Scholarships.txt",
+    "category": "Scholarships",
+    "section": "External Sponsorships (Government & Alumni)",
+    "keywords": [
+      "need",
+      "based",
+      "community",
+      "assistance",
+      "osaf",
+      "fana",
+      "financial",
+      "provided"
+    ],
+    "text": "3. Need-Based & Community Assistance\nOSAF & FANA: Financial assistance provided by the Old Students Association of FAST and the FAST Alumni of North America.\nIhsan Trust: Offers financial assistance for students unable to pay full fees.\nGeneral Refaqat Memorial: Specifically for students facing financial hardship.\nCommunity-Based: Various foundations including Memon, Bohra, and Agha Khan Foundation offer specialized scholarships."
+  }
+]

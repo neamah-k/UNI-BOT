@@ -1,0 +1,868 @@
+[
+  {
+    "id": "Academic Rules and Regulations_001",
+    "source": "Academic Rules and Regulations.txt",
+    "category": "Rules",
+    "section": "1. Attendance Requirements",
+    "keywords": [
+      "ideal",
+      "requirement",
+      "students",
+      "should",
+      "maintain",
+      "attendance",
+      "lectures",
+      "labs"
+    ],
+    "text": "Ideal Requirement: Students should maintain 100% attendance in lectures, labs, and tutorials.\nMinimum Threshold (Undergraduate): 80%.\nMinimum Threshold (Graduate/PhD): 75%.\nCondonation: Up to 20% of total lectures can be condoned for genuine reasons like illness.\nPenalty: Failure to meet these requirements results in an F/A (Fail due to Attendance) grade and ineligibility for final exams.\n\n2. Academic Grading System\nPerformance is typically split 50% for semester work (midterms, quizzes, etc.) and 50% for final examinations."
+  },
+  {
+    "id": "Academic Rules and Regulations_002",
+    "source": "Academic Rules and Regulations.txt",
+    "category": "Rules",
+    "section": "Letter Grades & Points",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Academic Rules and Regulations_003",
+    "source": "Academic Rules and Regulations.txt",
+    "category": "Rules",
+    "section": "Special Grades",
+    "keywords": [
+      "withdrawn",
+      "impact",
+      "incomplete",
+      "converts",
+      "completed",
+      "next",
+      "semester",
+      "honors"
+    ],
+    "text": "W: Withdrawn (No GPA impact).\nI: Incomplete (Converts to F if not completed by next semester).\n\n3. Honors & Recognition\nRector\u2019s List: SGPA of 4.00 (Undergraduates only).\nDean\u2019s List: SGPA between 3.50 and 3.99."
+  },
+  {
+    "id": "Academic Rules and Regulations_004",
+    "source": "Academic Rules and Regulations.txt",
+    "category": "Rules",
+    "section": "Graduation Honors",
+    "keywords": [
+      "summa",
+      "laude",
+      "cgpa",
+      "magna",
+      "academic",
+      "warning",
+      "probation"
+    ],
+    "text": "Summa Cum Laude: CGPA 3.90 \u2013 4.00.\nMagna Cum Laude: CGPA 3.75 \u2013 3.89.\nCum Laude: CGPA 3.60 \u2013 3.74.\n\n4. Academic Warning & Probation"
+  },
+  {
+    "id": "Academic Rules and Regulations_005",
+    "source": "Academic Rules and Regulations.txt",
+    "category": "Rules",
+    "section": "Warnings are issued if CGPA falls below",
+    "keywords": [
+      "rule",
+      "three",
+      "warning",
+      "count",
+      "reaches",
+      "student",
+      "admission",
+      "closed"
+    ],
+    "text": "BS/BBA: 2.00.\nMS/MBA: 2.50.\nPhD: 3.00.\nRule of Three: If the Warning Count reaches three, the student\u2019s admission is closed.\n\n5. Course Rules (FYP & Summer)\nFinal Year Project (FYP): To register for FYP-I, a student must have passed all courses from the first six semesters (deficiency of 1-2 courses may be allowed by HOD/Director).\nSummer Semester: An optional 8\u20139 week session. Maximum of 2 courses allowed. Fees are non-refundable.\n\n6. Degree Completion Limits\n\n7. Disciplinary Action\nAcademic Dishonesty: Minimum punishment is zero marks in the relevant task; maximum is an 'F' grade in the course or expulsion.\nMedium of Instruction: English is the standard for all exams, except for Religious/Islamic studies which can be answered in Urdu."
+  },
+  {
+    "id": "Admission Information_001",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Admission Information",
+    "keywords": [
+      "admission",
+      "university",
+      "strictly",
+      "based",
+      "merit",
+      "there",
+      "quotas",
+      "reserved"
+    ],
+    "text": "Admission to the university is strictly based on merit. There are no quotas, reserved seats, or admissions through donation. There is also no age limit for applicants."
+  },
+  {
+    "id": "Admission Information_002",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Merit is determined through either",
+    "keywords": [
+      "university",
+      "admission",
+      "test"
+    ],
+    "text": "The university\u2019s own admission test, or"
+  },
+  {
+    "id": "Admission Information_003",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "An equivalent test conducted by a recognized organization",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_004",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Foreign Nationals",
+    "keywords": [
+      "time",
+      "admission",
+      "foreign",
+      "nationals",
+      "submit",
+      "objection",
+      "certificate",
+      "ministry"
+    ],
+    "text": "At the time of admission, foreign nationals must submit a No Objection Certificate (NOC) from the Ministry of Federal Education and Professional Training."
+  },
+  {
+    "id": "Admission Information_005",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Applicants can apply using the following tests",
+    "keywords": [
+      "within",
+      "last",
+      "months",
+      "bachelor",
+      "programs",
+      "subject",
+      "general"
+    ],
+    "text": "NTS-NAT (within last 6 months) \u2192 Bachelor programs\nGAT Subject \u2192 MS, MBA, PhD programs\nSAT \u2192 Bachelor programs\nGRE (General) \u2192 MS, MBA programs\nGRE (Subject) \u2192 PhD programs"
+  },
+  {
+    "id": "Admission Information_006",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Candidates Awaiting Results",
+    "keywords": [
+      "students",
+      "awaiting",
+      "level",
+      "results",
+      "apply"
+    ],
+    "text": "Students awaiting FA/FSc/A-Level results may apply."
+  },
+  {
+    "id": "Admission Information_007",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Admission will be provisional",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_008",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Must pass required exams to confirm admission",
+    "keywords": [
+      "failed",
+      "admission",
+      "cancelled"
+    ],
+    "text": "If failed \u2192 admission is cancelled"
+  },
+  {
+    "id": "Admission Information_009",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Tuition fee refunded as per HEC policy",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_010",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Students must",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_011",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Inform the university immediately after results",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_012",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Submit refund application if needed",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_013",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Admission Procedure",
+    "keywords": [
+      "fill",
+      "application",
+      "form",
+      "online",
+      "admissions"
+    ],
+    "text": "Fill the application form online at: admissions.nu.edu.pk"
+  },
+  {
+    "id": "Admission Information_014",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "A unique Application Reference Number (ARN) is generated",
+    "keywords": [
+      "application",
+      "additional",
+      "campus",
+      "choice",
+      "test",
+      "type"
+    ],
+    "text": "Pay application fee: Rs. 3000\nAdditional campus choice: Rs. 500 per campus\nAdditional test type: Rs. 500 per test"
+  },
+  {
+    "id": "Admission Information_015",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Deposit fee in designated bank (non-refundable)",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_016",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Confirm all entered information is correct",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_017",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Print Admit Card after payment",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_018",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Bring admit card to test center (mandatory)",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_019",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "NU Online Admission Test (NU-OAT)",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_020",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Conducted on computer",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_021",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Candidate must know basic mouse/keyboard usage",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_022",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Each candidate receives a different test",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_023",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Sections appear in random order",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_024",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Questions also appear randomly",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_025",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Rules",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_026",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Can move within a section and change answers",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_027",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Must arrive on time (late entry not allowed)",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_028",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Bring only Admit Card",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_029",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Test held at campuses",
+    "keywords": [
+      "karachi",
+      "lahore",
+      "islamabad",
+      "peshawar",
+      "multan",
+      "chiniot",
+      "faisalabad"
+    ],
+    "text": "Karachi, Lahore, Islamabad, Peshawar, Multan, Chiniot-Faisalabad"
+  },
+  {
+    "id": "Admission Information_030",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "MS Engineering Test Composition",
+    "keywords": [
+      "essay",
+      "writing",
+      "analytical",
+      "skills",
+      "advanced",
+      "math",
+      "specialization",
+      "area"
+    ],
+    "text": "Essay Writing \u2192 10%\nAnalytical Skills & IQ \u2192 20%\nAdvanced Math \u2192 10%\nSpecialization Area \u2192 40%\nQuantitative Methods \u2192 20%"
+  },
+  {
+    "id": "Admission Information_031",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "MBA Test Composition",
+    "keywords": [
+      "english",
+      "essay",
+      "writing",
+      "analytical",
+      "skills",
+      "quantitative",
+      "methods",
+      "business"
+    ],
+    "text": "English \u2192 10%\nEssay Writing \u2192 30%\nAnalytical Skills & IQ \u2192 20%\nQuantitative Methods \u2192 20%\nBusiness Knowledge \u2192 20%"
+  },
+  {
+    "id": "Admission Information_032",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Merit Calculation",
+    "keywords": [
+      "merit",
+      "lists",
+      "prepared",
+      "separately",
+      "each",
+      "campus"
+    ],
+    "text": "Merit lists are prepared separately for each campus."
+  },
+  {
+    "id": "Admission Information_033",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "For BBA & BS programs",
+    "keywords": [
+      "admission",
+      "test",
+      "hssc",
+      "matric"
+    ],
+    "text": "Admission Test \u2192 50%\nFSc (HSSC) \u2192 40%\nMatric (SSC) \u2192 10%"
+  },
+  {
+    "id": "Admission Information_034",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Engineering Merit",
+    "keywords": [
+      "admission",
+      "test",
+      "matric"
+    ],
+    "text": "Admission Test \u2192 33%\nFSc \u2192 50%\nMatric \u2192 17%"
+  },
+  {
+    "id": "Admission Information_035",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Admission Test Structure (Bachelor Programs)",
+    "keywords": [
+      "essay",
+      "writing",
+      "analytical",
+      "skills",
+      "basic",
+      "math"
+    ],
+    "text": "BBA, BS (BA), BS (A&F):\n\nEssay Writing \u2192 15%\nAnalytical Skills & IQ \u2192 30%\nBasic Math \u2192 55%"
+  },
+  {
+    "id": "Admission Information_036",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "BS Computing / Engineering",
+    "keywords": [
+      "analytical",
+      "skills",
+      "basic",
+      "math",
+      "advanced"
+    ],
+    "text": "Analytical Skills & IQ \u2192 20%\nBasic Math \u2192 30%\nAdvanced Math \u2192 50%"
+  },
+  {
+    "id": "Admission Information_037",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "MS Computing Test Composition",
+    "keywords": [
+      "quantitative",
+      "analytical",
+      "general",
+      "computing",
+      "essay",
+      "writing",
+      "summary"
+    ],
+    "text": "Quantitative \u2192 30%\nAnalytical \u2192 30%\nGeneral Computing \u2192 30%\nEssay Writing & Summary \u2192 10%"
+  },
+  {
+    "id": "Admission Information_038",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "General Computing Breakdown",
+    "keywords": [
+      "programming",
+      "data",
+      "structures",
+      "operating",
+      "systems",
+      "networking",
+      "databases",
+      "software"
+    ],
+    "text": "Programming/Data Structures \u2192 50%\nOperating Systems \u2192 12.5%\nNetworking \u2192 12.5%\nDatabases \u2192 12.5%\nSoftware Engineering \u2192 12.5%"
+  },
+  {
+    "id": "Admission Information_039",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Test Cancellation Policy",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_040",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "The university may cancel a test if a candidate",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_041",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Is involved in illegal activity",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_042",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Violates test rules",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_043",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Admission Results",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_044",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Selected candidates are informed via",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_045",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "SMS",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_046",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Email",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_047",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Students should also check status at",
+    "keywords": [
+      "admissions",
+      "using"
+    ],
+    "text": "admissions.nu.edu.pk\nwww.nu.edu.pk\n(using ARN)"
+  },
+  {
+    "id": "Admission Information_048",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Admission Cancellation",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_049",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Admission may be cancelled if",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Admission Information_050",
+    "source": "Admission Information.txt",
+    "category": "Admissions",
+    "section": "Student is involved in illegal/undesirable activity",
+    "keywords": [
+      "false",
+      "documents",
+      "information",
+      "submitted"
+    ],
+    "text": "False documents or information are submitted"
+  },
+  {
+    "id": "Admission Schedule for 2025_001",
+    "source": "Admission Schedule for 2025.txt",
+    "category": "Schedules",
+    "section": "Admission Schedule for 2025",
+    "keywords": [
+      "academic",
+      "calendar"
+    ],
+    "text": "Academic Calendar 2025-26"
+  },
+  {
+    "id": "Fee Information.pdf_001",
+    "source": "Fee Information.pdf.txt",
+    "category": "General",
+    "section": "1. One-Time Admission Charges",
+    "keywords": [
+      "admission",
+      "payable",
+      "once",
+      "time",
+      "note",
+      "graduates",
+      "fast",
+      "nuces"
+    ],
+    "text": "Admission Fee: Rs. 30,000 (payable once at the time of admission).\nNote: Graduates of FAST-NUCES admitted to a higher degree program do not pay this again.\nSecurity Deposit: Rs. 20,000 (refundable upon degree completion or closing of admission).\nApplicant Admission Fee: Rs. 3,000.\n\n2. Recurring Semester Fees\nTuition Fee (All Programs/Campuses): Rs. 11,000 per credit hour.\nStudent Activities Fund: Rs. 2,500 per semester.\nLate Payment Fine: Charged at a rate of Re 1 per day for every thousand rupees of the total outstanding balance.\n\n3. Miscellaneous Service Fees"
+  },
+  {
+    "id": "Fee Information.pdf_002",
+    "source": "Fee Information.pdf.txt",
+    "category": "General",
+    "section": "These fees are non-refundable",
+    "keywords": [
+      "refund",
+      "policy",
+      "refunds",
+      "tuition",
+      "student",
+      "activity",
+      "funds",
+      "follow"
+    ],
+    "text": "4. Fee Refund Policy\nRefunds for Tuition and Student Activity funds follow HEC guidelines. The Admission Fee is never refundable.\nCalculation Note: Timelines include weekends and holidays.\nEligibility Failure: If a student's admission is cancelled because they failed to meet eligibility requirements (after results), the refund timeline is calculated from the date of the result announcement."
+  },
+  {
+    "id": "Fee Information_001",
+    "source": "Fee Information.txt",
+    "category": "Fees",
+    "section": "1. One-Time Admission Charges",
+    "keywords": [
+      "admission",
+      "payable",
+      "once",
+      "time",
+      "note",
+      "graduates",
+      "fast",
+      "nuces"
+    ],
+    "text": "Admission Fee: Rs. 30,000 (payable once at the time of admission).\nNote: Graduates of FAST-NUCES admitted to a higher degree program do not pay this again.\nSecurity Deposit: Rs. 20,000 (refundable upon degree completion or closing of admission).\nApplicant Admission Fee: Rs. 3,000.\n\n2. Recurring Semester Fees\nTuition Fee (All Programs/Campuses): Rs. 11,000 per credit hour.\nStudent Activities Fund: Rs. 2,500 per semester.\nLate Payment Fine: Charged at a rate of Re 1 per day for every thousand rupees of the total outstanding balance.\n\n3. Miscellaneous Service Fees"
+  },
+  {
+    "id": "Fee Information_002",
+    "source": "Fee Information.txt",
+    "category": "Fees",
+    "section": "These fees are non-refundable",
+    "keywords": [
+      "refund",
+      "policy",
+      "refunds",
+      "tuition",
+      "student",
+      "activity",
+      "funds",
+      "follow"
+    ],
+    "text": "4. Fee Refund Policy\nRefunds for Tuition and Student Activity funds follow HEC guidelines. The Admission Fee is never refundable.\nCalculation Note: Timelines include weekends and holidays.\nEligibility Failure: If a student's admission is cancelled because they failed to meet eligibility requirements (after results), the refund timeline is calculated from the date of the result announcement."
+  },
+  {
+    "id": "Financial Assistance and Scholarships_001",
+    "source": "Financial Assistance and Scholarships.txt",
+    "category": "Scholarships",
+    "section": "1. Internal Sponsorships (FAST-NUCES Provided)",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Financial Assistance and Scholarships_002",
+    "source": "Financial Assistance and Scholarships.txt",
+    "category": "Scholarships",
+    "section": "The university offers several forms of direct financial support",
+    "keywords": [
+      "merit",
+      "scholarship",
+      "bachelors",
+      "awarded",
+      "three",
+      "position",
+      "holders",
+      "each"
+    ],
+    "text": "Merit Scholarship for Bachelors: Awarded to the Top Three position holders of each Examination Board in their year of admission.\nSemester-Wise Merit Awards: Cash prizes and certificates are given to undergraduate students who rank in the top three of their department each semester.\nEligibility: Students must have a regular course load and an SGPA of 3.00 or higher.\nStudy Loans: Interest-free loans are arranged for bright students who cannot afford the fees."
+  },
+  {
+    "id": "Financial Assistance and Scholarships_003",
+    "source": "Financial Assistance and Scholarships.txt",
+    "category": "Scholarships",
+    "section": "Rules for Internal Sponsorships",
+    "keywords": [
+      "coverage",
+      "limited",
+      "tuition",
+      "fees",
+      "only"
+    ],
+    "text": "Coverage: Limited to tuition fees only."
+  },
+  {
+    "id": "Financial Assistance and Scholarships_004",
+    "source": "Financial Assistance and Scholarships.txt",
+    "category": "Scholarships",
+    "section": "Duration",
+    "keywords": [
+      "bachelors",
+      "maximum",
+      "semesters",
+      "masters",
+      "restrictions",
+      "cannot",
+      "used",
+      "repeat"
+    ],
+    "text": "Bachelors: Maximum of 8 semesters.\nMasters: Maximum of 4 semesters.\nPhD: Maximum of 6 semesters.\nRestrictions: Cannot be used for repeat or withdrawn courses; it only covers a course once.\nAcademic Standing: Sponsorship is suspended if a student's CGPA falls into the warning zone but is restored once the CGPA improves.\n\n2."
+  },
+  {
+    "id": "Financial Assistance and Scholarships_005",
+    "source": "Financial Assistance and Scholarships.txt",
+    "category": "Scholarships",
+    "section": "External Sponsorships (Government & Alumni)",
+    "keywords": [
+      "need",
+      "based",
+      "community",
+      "assistance",
+      "osaf",
+      "fana",
+      "financial",
+      "provided"
+    ],
+    "text": "3. Need-Based & Community Assistance\nOSAF & FANA: Financial assistance provided by the Old Students Association of FAST and the FAST Alumni of North America.\nIhsan Trust: Offers financial assistance for students unable to pay full fees.\nGeneral Refaqat Memorial: Specifically for students facing financial hardship.\nCommunity-Based: Various foundations including Memon, Bohra, and Agha Khan Foundation offer specialized scholarships."
+  },
+  {
+    "id": "Programs Offered and Campuses_001",
+    "source": "Programs Offered and Campuses.txt",
+    "category": "Programs",
+    "section": "Campus Key",
+    "keywords": [
+      "chiniot",
+      "faisalabad",
+      "islamabad",
+      "karachi",
+      "lahore",
+      "multan",
+      "peshawar",
+      "undergraduate"
+    ],
+    "text": "CFD: Chiniot-Faisalabad\nISB: Islamabad\nKHI: Karachi\nLHR: Lahore\nMUL: Multan\nPWR: Peshawar\n\n1. Undergraduate Programs\n\n2. Graduate Programs (MS & MBA)\n\n3. Postgraduate Programs (PhD)"
+  },
+  {
+    "id": "Transport and Hostel Facilities_001",
+    "source": "Transport and Hostel Facilities.txt",
+    "category": "Facilities",
+    "section": "1. Transport Facilities",
+    "keywords": [
+      "university",
+      "provides",
+      "transport",
+      "services",
+      "self",
+      "finance",
+      "subsidized",
+      "basis"
+    ],
+    "text": "The university provides transport services on a self-finance or subsidized basis across its campuses.\nNote for Peshawar Hostilities: A shuttle to/from the Daewoo/Bus terminal is available at designated times on Fridays and Mondays.\n\n2. Hostel Facilities\nOn-campus housing is available at specific campuses with varying capacities and amenities."
+  },
+  {
+    "id": "Transport and Hostel Facilities_002",
+    "source": "Transport and Hostel Facilities.txt",
+    "category": "Facilities",
+    "section": "Chiniot-Faisalabad Campus",
+    "keywords": [
+      "capacity",
+      "accommodates",
+      "over",
+      "students",
+      "faculty",
+      "separate",
+      "hostels",
+      "boys"
+    ],
+    "text": "Capacity: Accommodates over 800 students and faculty in separate hostels for boys and girls.\nAmenities: Well-equipped mess, study room, food storage (freezer/oven), internet, iron facility, medical center, and a gymnasium/fitness center.\nRecreation: Table tennis and billiard boards."
+  },
+  {
+    "id": "Transport and Hostel Facilities_003",
+    "source": "Transport and Hostel Facilities.txt",
+    "category": "Facilities",
+    "section": "Peshawar Campus",
+    "keywords": [
+      "campus",
+      "boys",
+      "only",
+      "capacity",
+      "students",
+      "room",
+      "features",
+      "each"
+    ],
+    "text": "On-Campus (Boys Only): Capacity for 150 students.\nRoom Features: Each student is provided with a bed, bedside table, study table, and a lockable cupboard.\nGeneral Facilities: Laundry, ironing, campus internet, and weekly pick/drop to city bus terminals on weekends.\nExternal Housing: Campus-managed hostels are also available within walking distance for additional capacity.\n\nThis completes the data formatting for all the documents you've provided:"
+  },
+  {
+    "id": "Transport and Hostel Facilities_004",
+    "source": "Transport and Hostel Facilities.txt",
+    "category": "Facilities",
+    "section": "Schedules (Admissions & Academic)",
+    "keywords": [
+      "rules",
+      "regulations",
+      "attendance",
+      "grading",
+      "information",
+      "tuition",
+      "refunds",
+      "misc"
+    ],
+    "text": "Rules & Regulations (Attendance, Grading, GPA, etc.)\nFee Information (Tuition, Refunds, & Misc.)"
+  },
+  {
+    "id": "Transport and Hostel Facilities_005",
+    "source": "Transport and Hostel Facilities.txt",
+    "category": "Facilities",
+    "section": "Financial Assistance (Scholarships & Loans)",
+    "keywords": [],
+    "text": ""
+  },
+  {
+    "id": "Transport and Hostel Facilities_006",
+    "source": "Transport and Hostel Facilities.txt",
+    "category": "Facilities",
+    "section": "Programs & Campuses (Degree availability by city)",
+    "keywords": [
+      "transport",
+      "hostels",
+      "facilities",
+      "campus"
+    ],
+    "text": "Transport & Hostels (Facilities by campus)"
+  }
+]
