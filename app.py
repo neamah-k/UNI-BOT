@@ -202,6 +202,36 @@ div[data-testid="stButton"] button[kind="secondary"]:hover {
     box-shadow: 0 0 0 2px rgba(88,166,255,0.12) !important;
     transform: translateY(-1px) !important;
 }
+/* ── Message text formatting ── */
+[data-testid="stChatMessage"] p {
+    color: #c9d1d9 !important;
+    font-size: 0.92rem !important;
+    line-height: 1.75 !important;
+    margin-bottom: 0.5rem !important;
+}
+[data-testid="stChatMessage"] strong {
+    color: #58a6ff !important;
+    font-weight: 600 !important;
+}
+[data-testid="stChatMessage"] ul,
+[data-testid="stChatMessage"] ol {
+    color: #c9d1d9 !important;
+    padding-left: 1.4rem !important;
+    margin: 0.4rem 0 0.6rem !important;
+}
+[data-testid="stChatMessage"] li {
+    font-size: 0.9rem !important;
+    line-height: 1.7 !important;
+    margin-bottom: 0.25rem !important;
+    color: #c9d1d9 !important;
+}
+[data-testid="stChatMessage"] h3 {
+    color: #58a6ff !important;
+    font-family: 'Syne', sans-serif !important;
+    font-weight: 700 !important;
+    margin: 0.8rem 0 0.4rem !important;
+}            
+
 </style>
 """, unsafe_allow_html=True)
 
@@ -242,6 +272,10 @@ def build_prompt(question: str, chunks: list[dict]) -> str:
     return f"""You are a helpful university helpdesk assistant for FAST-NUCES university.
 Answer the student's question using ONLY the information provided in the sources below.
 If the answer is not in the sources, say: "I don't have that information. Please contact the admin office directly."
+Format your response clearly using markdown:
+- **Bold** for important values like fees, deadlines, percentages, and key terms
+- Bullet points for lists of items or steps
+- Short paragraphs for explanations
 Always end your answer by citing which source(s) you used, like: [Source: filename — section].
 Note: If the question is about merit, grades, or admission calculation, look carefully in all sources provided.
 
