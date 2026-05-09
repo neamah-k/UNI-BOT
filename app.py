@@ -16,6 +16,8 @@ from dotenv import load_dotenv
 from groq import Groq
 import chromadb
 from sentence_transformers import SentenceTransformer
+import csv
+from datetime import datetime
 
 # --- Config ---
 load_dotenv()
@@ -297,17 +299,54 @@ def ask(question: str) -> tuple[str, list[dict]]:
     )
     return response.choices[0].message.content, chunks
 
+def get_followups(question: str, answer: str) -> list[str]:
+    prompt = f"""A student asked: "{question}"
+The answer given was: "{answer}"
 
+Generate exactly 3 short follow-up questions a student might ask next based on this conversation.
+Return ONLY a JSON array of 3 strings, no explanation, no markdown, no extra text.
+Example: ["Question 1?", "Question 2?", "Question 3?"]"""
+
+    response = groq_client.chat.completions.create(
+        model    = "llama-3.1-8b-instant",
+        messages = [{"role": "user", "content": prompt}]
+    )
+    import json
+    try:
+        text = response.choices[0].message.content.strip()
+        # Strip markdown fences if present
+        text = text.replace("```json", "").replace("```", "").strip()
+        return json.loads(text)
+    except:
+        return []
+
+def log_question(question: str, answer: str):
+    log_file    = "question_log.csv"
+    unanswered  = "i don't have that information" in answer.lower()
+    file_exists = os.path.isfile(log_file)
+
+    with open(log_file, "a", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        if not file_exists:
+            writer.writerow(["timestamp", "question", "answered", "answer_preview"])
+        writer.writerow([
+            datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            question,
+            "NO" if unanswered else "YES",
+            answer[:150].replace("\n", " ")
+        ])
+    
 # --- UI ---
 st.title("🎓 UniBot")
 st.caption("AI Helpdesk for FAST-NUCES University — Powered by RAG")
 st.divider()
 
 # Initialize chat history
-if "messages" not in st.session_state:
-    st.session_state.messages    = []
-    st.session_state.sources     = {}
-    st.session_state.faq_trigger = None
+# NEW
+if "messages"    not in st.session_state: st.session_state.messages    = []
+if "sources"     not in st.session_state: st.session_state.sources     = {}
+if "followups"   not in st.session_state: st.session_state.followups   = {}
+if "faq_trigger" not in st.session_state: st.session_state.faq_trigger = None
 
 # FAQ questions
 FAQ_QUESTIONS = [
@@ -331,6 +370,18 @@ for i, msg in enumerate(st.session_state.messages):
                     st.markdown(f"**{chunk['source']}** — *{chunk['section']}*")
                     st.caption(chunk["text"][:200] + "...")
                     st.divider()
+
+            # Show follow-ups only on the last assistant message
+            if i == len(st.session_state.messages) - 1:
+                followups = st.session_state.followups.get(i, [])
+                if followups:
+                    st.markdown("<p style='color:#484f58; font-size:0.72rem; text-transform:uppercase; letter-spacing:0.08em; margin-top:0.8rem;'>You might also ask</p>", unsafe_allow_html=True)
+                    fu_cols = st.columns(len(followups))
+                    for fi, fq in enumerate(followups):
+                        with fu_cols[fi]:
+                            if st.button(fq, key=f"fu_{i}_{fi}", use_container_width=True):
+                                st.session_state.faq_trigger = fq
+                                st.rerun()
 
 # FAQ buttons — only show when chat is empty
 if not st.session_state.messages:
@@ -376,12 +427,14 @@ if question:
     with st.chat_message("assistant"):
         with st.spinner("Searching university documents..."):
             answer, chunks = ask(question)
+            followups      = get_followups(question, answer)
+            log_question(question, answer)
 
         st.markdown(answer)
 
-        # Store sources linked to this message index
         msg_index = len(st.session_state.messages)
-        st.session_state.sources[msg_index] = chunks
+        st.session_state.sources[msg_index]   = chunks
+        st.session_state.followups[msg_index] = followups
         st.session_state.messages.append({"role": "assistant", "content": answer})
 
         with st.expander("📄 Sources used"):
@@ -389,6 +442,14 @@ if question:
                 st.markdown(f"**{chunk['source']}** — *{chunk['section']}*")
                 st.caption(chunk["text"][:200] + "...")
                 st.divider()
+        if followups:
+            st.markdown("<p style='color:#484f58; font-size:0.72rem; text-transform:uppercase; letter-spacing:0.08em; margin-top:0.8rem;'>You might also ask</p>", unsafe_allow_html=True)
+            fu_cols = st.columns(len(followups))
+            for fi, fq in enumerate(followups):
+                with fu_cols[fi]:
+                    if st.button(fq, key=f"fu_new_{fi}", use_container_width=True):
+                        st.session_state.faq_trigger = fq
+                        st.rerun()
 
 # Sidebar
 with st.sidebar:
@@ -409,5 +470,6 @@ with st.sidebar:
     if st.button("🗑️ Clear Chat"):
         st.session_state.messages    = []
         st.session_state.sources     = {}
+        st.session_state.followups   = {}
         st.session_state.faq_trigger = None
         st.rerun()
