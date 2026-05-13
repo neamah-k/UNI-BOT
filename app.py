@@ -37,46 +37,35 @@ st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@700;800&display=swap');
 
-/* Base */
-html, body, [class*="css"] {
-    font-family: 'Inter', sans-serif !important;
-}
-
-/* Hide Streamlit branding */
+html, body, [class*="css"] { font-family: 'Inter', sans-serif !important; }
 #MainMenu, footer { visibility: hidden; }
 
-/* Page background */
-.stApp {
-    background: #0d1117 !important;
-}
+.stApp { background: #0d1117 !important; }
 .main .block-container {
     padding-top: 1.5rem !important;
     padding-bottom: 5rem !important;
     max-width: 750px !important;
 }
 
-/* Title */
+/* Title — orange-red gradient */
 h1 {
     font-family: 'Syne', sans-serif !important;
     font-size: 2rem !important;
     font-weight: 800 !important;
-    background: linear-gradient(90deg, #58a6ff, #a5d6ff);
+    background: linear-gradient(90deg, #b388ff, #ADEFD1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     letter-spacing: -0.3px !important;
 }
 [data-testid="stCaptionContainer"] p {
-    color: #6e7681 !important;
+    color: #7a6a9a !important;
     font-size: 0.82rem !important;
     letter-spacing: 0.02em !important;
 }
-hr {
-    border-color: #21262d !important;
-    margin: 0.75rem 0 1.25rem !important;
-}
+hr { border-color: #2d1f4a !important; margin: 0.75rem 0 1.25rem !important; }
 
-/* Chat message containers */
+/* Chat messages */
 [data-testid="stChatMessage"] {
     background: transparent !important;
     border: none !important;
@@ -84,111 +73,111 @@ hr {
     gap: 0.75rem !important;
 }
 
-/* User bubble */
+/* User bubble — purple */
 [data-testid="stChatMessageAvatarUser"] ~ div .stMarkdown {
-    background: linear-gradient(135deg, #0d2847, #0f3460) !important;
-    border: 1px solid #1f4a7a !important;
+    background: linear-gradient(135deg, #2a1045, #3d1f6e) !important;
+    border: 1px solid #5a2d9a !important;
     border-radius: 18px 18px 4px 18px !important;
     padding: 0.8rem 1rem !important;
     font-size: 0.9rem !important;
     line-height: 1.65 !important;
-    color: #cdd9e5 !important;
-    box-shadow: 0 2px 12px rgba(13,40,71,0.5) !important;
+    color: #d8c8f0 !important;
+    box-shadow: 0 2px 12px rgba(90,45,154,0.4) !important;
 }
 
-/* Assistant bubble */
+/* Assistant bubble — dark purple card */
 [data-testid="stChatMessageAvatarAssistant"] ~ div .stMarkdown {
-    background: #161b22 !important;
-    border: 1px solid #30363d !important;
+    background: #1e1030 !important;
+    border: 1px solid #3a2060 !important;
     border-radius: 18px 18px 18px 4px !important;
     padding: 0.85rem 1.05rem !important;
     font-size: 0.9rem !important;
     line-height: 1.7 !important;
-    color: #c9d1d9 !important;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.3) !important;
+    color: #e8e0f8 !important;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.4) !important;
 }
-[data-testid="stChatMessageAvatarAssistant"] ~ div .stMarkdown p  { color: #c9d1d9 !important; }
-[data-testid="stChatMessageAvatarAssistant"] ~ div .stMarkdown strong { color: #58a6ff !important; }
+[data-testid="stChatMessageAvatarAssistant"] ~ div .stMarkdown p  { color: #e8e0f8 !important; }
+[data-testid="stChatMessageAvatarAssistant"] ~ div .stMarkdown strong { color: #b388ff !important; }
 [data-testid="stChatMessageAvatarAssistant"] ~ div .stMarkdown code {
-    background: #0d1117 !important;
-    border: 1px solid #30363d !important;
+    background: #140820 !important;
+    border: 1px solid #3a2060 !important;
     border-radius: 4px !important;
     padding: 1px 5px !important;
     font-size: 0.82rem !important;
-    color: #79c0ff !important;
+    color: #ce93d8 !important;
 }
 
 /* Avatars */
 [data-testid="stChatMessageAvatarUser"] {
-    background: linear-gradient(135deg, #0f3460, #58a6ff) !important;
+    background: linear-gradient(135deg, #b388ff, #7c4dff) !important;
     border-radius: 50% !important;
-    box-shadow: 0 0 0 2px rgba(88,166,255,0.3) !important;
+    box-shadow: 0 0 0 2px rgba(179,136,255,0.4) !important;
 }
 [data-testid="stChatMessageAvatarAssistant"] {
-    background: linear-gradient(135deg, #161b22, #21262d) !important;
-    border: 1px solid #30363d !important;
+    background: linear-gradient(135deg, #2a1045, #3d1f6e) !important;
+    border: 1px solid #5a2d9a !important;
     border-radius: 50% !important;
 }
 
 /* Source expander */
 [data-testid="stExpander"] {
-    background: #0d1117 !important;
-    border: 1px solid #21262d !important;
+    background: #1e1030 !important;
+    border: 1px solid #3a2060 !important;
     border-radius: 10px !important;
     margin-top: 0.4rem !important;
 }
 [data-testid="stExpander"] details summary {
-    color: #58a6ff !important;
+    color: #b388ff !important;
     font-size: 0.78rem !important;
     font-weight: 500 !important;
     letter-spacing: 0.03em !important;
 }
-[data-testid="stExpander"] details summary:hover { color: #a5d6ff !important; }
-[data-testid="stExpander"] p  { color: #6e7681 !important; font-size: 0.79rem !important; }
-[data-testid="stExpander"] strong { color: #58a6ff !important; font-weight: 600 !important; }
+[data-testid="stExpander"] details summary:hover { color: #ce93d8 !important; }
+[data-testid="stExpander"] p  { color: #7a6a9a !important; font-size: 0.79rem !important; }
+[data-testid="stExpander"] strong { color: #b388ff !important; font-weight: 600 !important; }
 
 /* Chat input */
 [data-testid="stChatInput"] {
-    background: #161b22 !important;
-    border: 1px solid #30363d !important;
+    background: #1e1030 !important;
+    border: 1px solid #3a2060 !important;
     border-radius: 14px !important;
     transition: border-color 0.2s, box-shadow 0.2s !important;
 }
 [data-testid="stChatInput"]:focus-within {
-    border-color: #388bfd !important;
-    box-shadow: 0 0 0 3px rgba(56,139,253,0.15) !important;
+    border-color: #b388ff !important;
+    box-shadow: 0 0 0 3px rgba(179,136,255,0.15) !important;
 }
 [data-testid="stChatInput"] textarea {
-    color: #c9d1d9 !important;
+    color: #e8e0f8 !important;
     background: transparent !important;
     font-family: 'Inter', sans-serif !important;
     font-size: 0.88rem !important;
-    caret-color: #58a6ff !important;
+    caret-color: #b388ff !important;
 }
-[data-testid="stChatInput"] textarea::placeholder { color: #484f58 !important; }
+[data-testid="stChatInput"] textarea::placeholder { color: #4a3a6a !important; }
 [data-testid="stChatInputSubmitButton"] button {
-    background: #238636 !important;
+    background: linear-gradient(90deg, #b388ff, #7c4dff) !important;
     border-radius: 8px !important;
     border: none !important;
-    transition: background 0.2s !important;
+    transition: opacity 0.2s !important;
 }
-[data-testid="stChatInputSubmitButton"] button:hover { background: #2ea043 !important; }
+[data-testid="stChatInputSubmitButton"] button:hover { opacity: 0.85 !important; }
 
 /* Spinner */
-[data-testid="stSpinner"] > div { border-top-color: #58a6ff !important; }
+[data-testid="stSpinner"] > div { border-top-color: #b388ff !important; }
 
 /* Scrollbar */
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: #0d1117; }
-::-webkit-scrollbar-thumb { background: #21262d; border-radius: 10px; }
-::-webkit-scrollbar-thumb:hover { background: #30363d; }
+::-webkit-scrollbar-thumb { background: #3a2060; border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: #5a2d9a; }
 
-/* FAQ pill buttons */
+/* FAQ / follow-up buttons */
 div[data-testid="stButton"] button[kind="secondary"] {
-    background: #161b22 !important;
-    border: 1px solid #30363d !important;
+    background: #1e1030 !important;
+    border: 1px solid #3a2060 !important;
     border-radius: 20px !important;
-    color: #8b949e !important;
+    color: #7a6a9a !important;
     font-size: 0.78rem !important;
     font-weight: 400 !important;
     padding: 0.45rem 0.7rem !important;
@@ -198,43 +187,43 @@ div[data-testid="stButton"] button[kind="secondary"] {
     line-height: 1.4 !important;
 }
 div[data-testid="stButton"] button[kind="secondary"]:hover {
-    background: #1c2128 !important;
-    border-color: #58a6ff !important;
-    color: #58a6ff !important;
-    box-shadow: 0 0 0 2px rgba(88,166,255,0.12) !important;
+    background: #2a1545 !important;
+    border-color: #b388ff !important;
+    color: #b388ff !important;
+    box-shadow: 0 0 0 2px rgba(179,136,255,0.12) !important;
     transform: translateY(-1px) !important;
 }
-/* ── Message text formatting ── */
-[data-testid="stChatMessage"] p {
-    color: #c9d1d9 !important;
-    font-size: 0.92rem !important;
-    line-height: 1.75 !important;
-    margin-bottom: 0.5rem !important;
+
+/* Message text formatting */
+[data-testid="stChatMessage"] p { color: #e8e0f8 !important; font-size: 0.92rem !important; line-height: 1.75 !important; margin-bottom: 0.5rem !important; }
+[data-testid="stChatMessage"] strong { color: #b388ff !important; font-weight: 600 !important; }
+[data-testid="stChatMessage"] ul, [data-testid="stChatMessage"] ol { color: #e8e0f8 !important; padding-left: 1.4rem !important; margin: 0.4rem 0 0.6rem !important; }
+[data-testid="stChatMessage"] li { font-size: 0.9rem !important; line-height: 1.7 !important; margin-bottom: 0.25rem !important; color: #e8e0f8 !important; }
+[data-testid="stChatMessage"] h3 { color: #b388ff !important; font-family: 'Syne', sans-serif !important; font-weight: 700 !important; margin: 0.8rem 0 0.4rem !important; }
+
+/* Category tags */
+.cat-tag {
+    display: inline-block;
+    padding: 0.18rem 0.65rem;
+    border-radius: 100px;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
 }
-[data-testid="stChatMessage"] strong {
-    color: #58a6ff !important;
-    font-weight: 600 !important;
-}
-[data-testid="stChatMessage"] ul,
-[data-testid="stChatMessage"] ol {
-    color: #c9d1d9 !important;
-    padding-left: 1.4rem !important;
-    margin: 0.4rem 0 0.6rem !important;
-}
-[data-testid="stChatMessage"] li {
-    font-size: 0.9rem !important;
-    line-height: 1.7 !important;
-    margin-bottom: 0.25rem !important;
-    color: #c9d1d9 !important;
-}
-[data-testid="stChatMessage"] h3 {
-    color: #58a6ff !important;
-    font-family: 'Syne', sans-serif !important;
-    font-weight: 700 !important;
-    margin: 0.8rem 0 0.4rem !important;
-}            
+.cat-Fees         { background: #2a1a0a; color: #ce93d8; border: 1px solid #8b4a10; }
+.cat-Admissions   { background: #1a0a30; color: #b388ff; border: 1px solid #5a2d9a; }
+.cat-Rules        { background: #2a0a0a; color: #ef9a9a; border: 1px solid #8b2020; }
+.cat-Scholarships { background: #200a28; color: #e040fb; border: 1px solid #6a1a7a; }
+.cat-Schedules    { background: #0a1020; color: #64b5f6; border: 1px solid #1a4a8b; }
+.cat-Programs     { background: #201a0a; color: #ffeb3b; border: 1px solid #8b7a10; }
+.cat-Facilities   { background: #0a2010; color: #69f0ae; border: 1px solid #1a6a3a; }
+.cat-Contact      { background: #0a1a20; color: #39d0d8; border: 1px solid #0e7490; }
+.cat-General      { background: #1a1020; color: #9a8ab0; border: 1px solid #3a2060; }
 
 </style>
+
 """, unsafe_allow_html=True)
 
 
@@ -263,15 +252,15 @@ def retrieve(question: str) -> list[dict]:
         })
     return chunks
 
+HISTORY_TURNS = 4  # number of past exchanges to pass as memory
 
-def build_prompt(question: str, chunks: list[dict]) -> str:
-    context_blocks = ""
+def build_messages(question: str, chunks: list[dict]) -> list[dict]:
+    """Build messages array with conversation history for memory."""
+    ctx = ""
     for i, chunk in enumerate(chunks, 1):
-        context_blocks += (
-            f"[Source {i}: {chunk['source']} — {chunk['section']}]\n"
-            f"{chunk['text']}\n\n"
-        )
-    return f"""You are a helpful university helpdesk assistant for FAST-NUCES university.
+        ctx += f"[Source {i}: {chunk['source']} — {chunk['section']}]\n{chunk['text']}\n\n"
+
+    system = f"""You are a helpful university helpdesk assistant for FAST-NUCES university.
 Answer the student's question using ONLY the information provided in the sources below.
 If the answer is not in the sources, say: "I don't have that information. Please contact the admin office directly."
 Format your response clearly using markdown:
@@ -282,22 +271,30 @@ Always end your answer by citing which source(s) you used, like: [Source: filena
 Note: If the question is about merit, grades, or admission calculation, look carefully in all sources provided.
 
 --- SOURCES ---
-{context_blocks}
---- END OF SOURCES ---
+{ctx}--- END OF SOURCES ---"""
 
-Student question: {question}
+    messages = [{"role": "system", "content": system}]
 
-Answer:"""
+    # Add last N turns of history for memory
+    history = st.session_state.messages[-(HISTORY_TURNS * 2):]
+    for msg in history:
+        messages.append({"role": msg["role"], "content": msg["content"]})
+
+    messages.append({"role": "user", "content": question})
+    return messages
 
 
 def ask(question: str) -> tuple[str, list[dict]]:
     chunks   = retrieve(question)
-    prompt   = build_prompt(question, chunks)
-    response = groq_client.chat.completions.create(
+    messages = build_messages(question, chunks)
+
+    # Stream response token by token
+    stream = groq_client.chat.completions.create(
         model    = "llama-3.1-8b-instant",
-        messages = [{"role": "user", "content": prompt}]
+        messages = messages,
+        stream   = True          # ← enables streaming
     )
-    return response.choices[0].message.content, chunks
+    return stream, chunks
 
 def get_followups(question: str, answer: str) -> list[str]:
     prompt = f"""A student asked: "{question}"
@@ -326,26 +323,50 @@ def log_question(question: str, answer: str):
     file_exists = os.path.isfile(log_file)
 
     with open(log_file, "a", newline="", encoding="utf-8") as f:
-        writer = csv.writer(f)
+        writer = csv.writer(f, quoting=csv.QUOTE_ALL)
         if not file_exists:
-            writer.writerow(["timestamp", "question", "answered", "answer_preview"])
+            writer.writerow(["timestamp", "question", "answered", "answer_preview", "feedback"])
         writer.writerow([
             datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
             question,
             "NO" if unanswered else "YES",
-            answer[:150].replace("\n", " ")
+            answer[:150].replace("\n", " "),
+            ""   # ← empty feedback column, filled later by log_feedback()
         ])
-    
+
+def detect_category(chunks: list[dict]) -> str:
+    from collections import Counter
+    cats = [c["category"] for c in chunks]
+    return Counter(cats).most_common(1)[0][0] if cats else "General"
+
+def log_feedback(question: str, feedback: str):
+    log_file = "question_log.csv"
+    if not os.path.isfile(log_file):
+        return
+    rows = []
+    with open(log_file, "r", encoding="utf-8") as f:
+        rows = list(csv.reader(f))
+    for i in range(len(rows) - 1, 0, -1):
+        if len(rows[i]) >= 2 and rows[i][1] == question:
+            # append feedback at end if column missing
+            while len(rows[i]) < 5:
+                rows[i].append("")
+            rows[i][4] = feedback
+            break
+    with open(log_file, "w", newline="", encoding="utf-8") as f:
+        csv.writer(f).writerows(rows)    
+
 # --- UI ---
 st.title("🎓 UniBot")
 st.caption("AI Helpdesk for FAST-NUCES University — Powered by RAG")
 st.divider()
 
 # Initialize chat history
-# NEW
 if "messages"    not in st.session_state: st.session_state.messages    = []
 if "sources"     not in st.session_state: st.session_state.sources     = {}
 if "followups"   not in st.session_state: st.session_state.followups   = {}
+if "categories"  not in st.session_state: st.session_state.categories  = {}
+if "feedback"    not in st.session_state: st.session_state.feedback    = {}
 if "faq_trigger" not in st.session_state: st.session_state.faq_trigger = None
 
 # FAQ questions
@@ -365,6 +386,26 @@ for i, msg in enumerate(st.session_state.messages):
 
         # Show sources for assistant messages
         if msg["role"] == "assistant" and i in st.session_state.sources:
+            cat = st.session_state.categories.get(i, "General")
+            st.markdown(f'<div class="cat-tag cat-{cat}">📁 {cat}</div>', unsafe_allow_html=True)
+
+            fb = st.session_state.feedback.get(i)
+            if fb:
+                st.caption(f"You rated this: {fb}")
+            else:
+                q_text = st.session_state.messages[i-1]["content"] if i > 0 else ""
+                fb_col1, fb_col2, _ = st.columns([1, 1, 8])
+                with fb_col1:
+                    if st.button("👍", key=f"up_{i}"):
+                        st.session_state.feedback[i] = "👍 Helpful"
+                        log_feedback(q_text, "helpful")
+                        st.rerun()
+                with fb_col2:
+                    if st.button("👎", key=f"dn_{i}"):
+                        st.session_state.feedback[i] = "👎 Not helpful"
+                        log_feedback(q_text, "not_helpful")
+                        st.rerun()
+
             with st.expander("📄 Sources used"):
                 for chunk in st.session_state.sources[i]:
                     st.markdown(f"**{chunk['source']}** — *{chunk['section']}*")
@@ -424,18 +465,41 @@ if question:
         st.markdown(question)
 
     # Get and show bot response
+# Get and show bot response
     with st.chat_message("assistant"):
-        with st.spinner("Searching university documents..."):
-            answer, chunks = ask(question)
-            followups      = get_followups(question, answer)
-            log_question(question, answer)
+        with st.spinner("Searching documents..."):
+            stream, chunks = ask(question)
 
-        st.markdown(answer)
+        # Stream tokens live — no st.markdown needed
+        answer = st.write_stream(
+            chunk.choices[0].delta.content or ""
+            for chunk in stream
+            if chunk.choices[0].delta.content
+        )
+
+        followups = get_followups(question, answer)
+        log_question(question, answer)
 
         msg_index = len(st.session_state.messages)
-        st.session_state.sources[msg_index]   = chunks
-        st.session_state.followups[msg_index] = followups
+        category  = detect_category(chunks)
+        st.session_state.sources[msg_index]    = chunks
+        st.session_state.followups[msg_index]  = followups
+        st.session_state.categories[msg_index] = category
         st.session_state.messages.append({"role": "assistant", "content": answer})
+
+        st.markdown(f'<div class="cat-tag cat-{category}">📁 {category}</div>', unsafe_allow_html=True)
+
+        fb_col1, fb_col2, _ = st.columns([1, 1, 8])
+        with fb_col1:
+            if st.button("👍", key="up_new"):
+                st.session_state.feedback[msg_index] = "👍 Helpful"
+                log_feedback(question, "helpful")
+                st.rerun()
+        with fb_col2:
+            if st.button("👎", key="dn_new"):
+                st.session_state.feedback[msg_index] = "👎 Not helpful"
+                log_feedback(question, "not_helpful")
+                st.rerun()
 
         with st.expander("📄 Sources used"):
             for chunk in chunks:
@@ -471,5 +535,7 @@ with st.sidebar:
         st.session_state.messages    = []
         st.session_state.sources     = {}
         st.session_state.followups   = {}
+        st.session_state.categories  = {} 
+        st.session_state.feedback    = {} 
         st.session_state.faq_trigger = None
         st.rerun()

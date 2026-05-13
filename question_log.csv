@@ -1,5 +1,7 @@
-timestamp,question,answered,answer_preview
-2026-05-09 19:59:53,What is the fee structure?,YES,**Fee Structure:** ====================  The fee structure at FAST-NUCES university can be broken down into several categories:  ### One-Time Admissio
-2026-05-09 20:00:26,what are the student activity fees?,YES,"**Student Activity Fees:** * Rs. **2,500** per semester [Cited Source: Source 2 — 2. Recurring Semester Fees]  Please note that there is no variation "
-2026-05-09 20:01:25,Is this fee the same for online learners?,NO,"Unfortunately, we do not have any information about fees for online learners in the provided sources [Source: None].  I don't have that information. P"
-2026-05-09 20:02:25,will the uni provide transport?,YES,"**Yes**, the university provides transport services on a self-finance or subsidized basis across its campuses.  This facility is available for student"
+timestamp,question,answered,answer_preview,feedback
+2026-05-13 10:21:06,What is the application fee?,YES,"The application fee for FAST-NUCES university is **Rs. 3,000**. [Source: Admission Information.txt — Pay application fee: Rs. 3000]",
+2026-05-13 10:21:17,is it refundable?,YES,"The Admission Fee is **never** refundable. [Source: Fee Information.pdf.txt — 4. Fee Refund Policy], [Source: Fee Information.txt — 4. Fee Refund Poli",helpful
+2026-05-13 10:21:31,What happens if I withdraw from the program?,YES,"If you withdraw from the program, the grade 'W: Withdrawn' will be assigned to you, and it will have **no impact** on your GPA. [Source: Academic Rule",helpful
+2026-05-13 10:22:10,tell me about the online class policy,NO,I don't have that information. Please contact the admin office directly.,not_helpful
+2026-05-13 10:23:04,tell me the email. i will ask them,YES,"I don't have the email address of the admin office. However, you can contact them through the university's official website:  * Visit [www.nu.edu.pk](",
+2026-05-13 10:38:26,does karachi campus have email,YES,"**Yes**, the Karachi Campus of FAST-NUCES has an email address for admission queries.  You can contact them at: admissions.khi@nu.edu.pk.  [Source: Co",helpful
