@@ -1,14 +1,8 @@
 """
-rag_query.py
-------------
 Takes a user question, retrieves relevant chunks from ChromaDB,
-and sends them to Gemini (free) to generate a grounded answer with citations.
-
-Usage:
+and sends them to Groq to generate a grounded answer with citations.
     python rag_query.py
 
-Requirements:
-    pip install google-generativeai chromadb sentence-transformers python-dotenv
 """
 
 import os
@@ -17,7 +11,7 @@ from groq import Groq
 import chromadb
 from sentence_transformers import SentenceTransformer
 
-# --- Load API key from .env file ---
+# --- Load API key
 load_dotenv()
 API_KEY = os.getenv("GROQ_API_KEY")
 if not API_KEY:
@@ -34,7 +28,7 @@ embed_model = SentenceTransformer("all-MiniLM-L6-v2")
 client     = chromadb.PersistentClient(path=CHROMA_DIR)
 collection = client.get_collection("university_docs")
 
-# --- Configure Gemini ---
+# --- Configure Groq ---
 groq_client = Groq(api_key=API_KEY)
 
 
@@ -89,7 +83,7 @@ def ask(question: str) -> str:
 
 # --- Interactive loop ---
 if __name__ == "__main__":
-    print("\n UniBot — University Helpdesk (powered by Gemini)")
+    print("\n UniBot — University Helpdesk (powered by Groq)")
     print(" Type your question or 'quit' to exit.\n")
 
     while True:

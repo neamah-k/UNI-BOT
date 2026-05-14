@@ -197,7 +197,7 @@ uploaded_file = st.file_uploader(
     label_visibility="collapsed"
 )
 
-CATEGORIES = ["Admissions", "Fees", "Scholarships", "Schedules", "Programs", "Rules", "Facilities", "Contact", "General"]
+CATEGORIES = ["Admissions", "Fees", "Scholarships", "Schedules", "Programs", "Rules", "Facilities", "Contact", "General", "Faculty"]
 
 col1, col2 = st.columns(2)
 with col1:
@@ -271,7 +271,6 @@ log_path = "question_log.csv"
 
 if os.path.isfile(log_path):
     df = pd.read_csv(log_path, on_bad_lines="skip", engine="python", quoting=1)
-    # Ensure feedback column always exists
     if "feedback" not in df.columns:
         df["feedback"] = ""
     unanswered = df[df["answered"] == "NO"]

@@ -5,3 +5,11 @@ timestamp,question,answered,answer_preview,feedback
 2026-05-13 10:22:10,tell me about the online class policy,NO,I don't have that information. Please contact the admin office directly.,not_helpful
 2026-05-13 10:23:04,tell me the email. i will ask them,YES,"I don't have the email address of the admin office. However, you can contact them through the university's official website:  * Visit [www.nu.edu.pk](",
 2026-05-13 10:38:26,does karachi campus have email,YES,"**Yes**, the Karachi Campus of FAST-NUCES has an email address for admission queries.  You can contact them at: admissions.khi@nu.edu.pk.  [Source: Co",helpful
+2026-05-13 13:03:13,What is the fee structure?,YES,"**Fee Structure:** The fee structure at FAST-NUCES consists of One-Time Admission Charges, Recurring Semester Fees, and Miscellaneous Service Fees.  #",helpful
+2026-05-13 13:14:55,where is fast,YES,"Unfortunately, I don't have any information about the location of FAST-NUCES in the provided sources. The closest information is [Source 4: Admission ",not_helpful
+2026-05-13 20:09:53,What programs are offered?,YES,"According to the admission information provided, the university offers various programs at different levels:  * Bachelor programs * MS (Master of Scie",
+2026-05-13 20:10:34,What programs are offered?,YES,"According to the sources provided, the following programs are mentioned:  * Bachelor programs [Source: Admission Information.txt — Applicants can appl",
+2026-05-13 20:11:48,What is the fee structure?,YES,"The fee structure for FAST-NUCES university consists of the following components:  ### **One-Time Admission Charges** * Admission Fee: **Rs. 30,000** ",helpful
+2026-05-13 20:38:27,tell me the contact for islamabad campus,YES,You can contact the Islamabad Campus of FAST-NUCES university at:  * Phone numbers: **(051) 111 128 128** or **(051) 831 4100-29**    or you can email,
+2026-05-13 20:38:44,How many campuses are there in Islamabad?,NO,"I don't have that information. Please contact the admin office directly.  However, according to the sources provided, the Islamabad Campus is specifie",
+2026-05-14 08:29:16,what scholarships are these,YES,### Available Scholarships  There are several scholarship programs available:  * **Merit Scholarship for Bachelors**: For the top **3** position holde,helpful

@@ -1,6 +1,4 @@
 """
-embed_and_store.py
-------------------
 Reads all_chunks.json, generates embeddings using a free HuggingFace model,
 and stores everything in ChromaDB for fast retrieval.
 

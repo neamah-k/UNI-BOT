@@ -1,13 +1,5 @@
 """
-app.py
-------
-Streamlit chat interface for UniBot — FAST-NUCES University Helpdesk.
-
-Usage:
     streamlit run app.py
-
-Requirements:
-    pip install streamlit chromadb sentence-transformers groq python-dotenv
 """
 
 import os
@@ -32,7 +24,7 @@ st.set_page_config(
     layout     = "centered"
 )
 
-# --- Custom CSS (styling only — no logic changes) ---
+# --- CSS
 st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@700;800&display=swap');
@@ -221,13 +213,13 @@ div[data-testid="stButton"] button[kind="secondary"]:hover {
 .cat-Facilities   { background: #0a2010; color: #69f0ae; border: 1px solid #1a6a3a; }
 .cat-Contact      { background: #0a1a20; color: #39d0d8; border: 1px solid #0e7490; }
 .cat-General      { background: #1a1020; color: #9a8ab0; border: 1px solid #3a2060; }
-
+.cat-Faculty      { background: #1a1020; color: #9a8ab0; border: 1px solid #3a2060; }
 </style>
 
 """, unsafe_allow_html=True)
 
 
-# --- Load models (cached so they only load once) ---
+# --- Load models ---
 @st.cache_resource
 def load_resources():
     embed_model = SentenceTransformer("all-MiniLM-L6-v2")
@@ -240,10 +232,12 @@ embed_model, collection, groq_client = load_resources()
 
 # --- RAG functions ---
 def retrieve(question: str) -> list[dict]:
-    embedding = embed_model.encode([question]).tolist()
-    results   = collection.query(query_embeddings=embedding, n_results=TOP_K)
+    embedding = embed_model.encode([question]).tolist()  # text to vector
+    # vector database -> chromaDB
+    results   = collection.query(query_embeddings=embedding, n_results=TOP_K)  # search through vector database 
+    # it looks for vectors that are "geometrically close" to the question's vector
     chunks = []
-    for doc, meta in zip(results["documents"][0], results["metadatas"][0]):
+    for doc, meta in zip(results["documents"][0], results["metadatas"][0]): # data unpacking
         chunks.append({
             "text"    : doc,
             "source"  : meta["source"],
@@ -292,7 +286,7 @@ def ask(question: str) -> tuple[str, list[dict]]:
     stream = groq_client.chat.completions.create(
         model    = "llama-3.1-8b-instant",
         messages = messages,
-        stream   = True          # ← enables streaming
+        stream   = True          #  enables streaming
     )
     return stream, chunks
 
@@ -331,7 +325,7 @@ def log_question(question: str, answer: str):
             question,
             "NO" if unanswered else "YES",
             answer[:150].replace("\n", " "),
-            ""   # ← empty feedback column, filled later by log_feedback()
+            ""   # empty feedback column, filled later by log_feedback()
         ])
 
 def detect_category(chunks: list[dict]) -> str:
@@ -465,7 +459,6 @@ if question:
         st.markdown(question)
 
     # Get and show bot response
-# Get and show bot response
     with st.chat_message("assistant"):
         with st.spinner("Searching documents..."):
             stream, chunks = ask(question)
@@ -527,6 +520,7 @@ with st.sidebar:
     - 📚 Programs Offered
     - 🏫 Rules & Regulations
     - 🚌 Transport & Hostel
+    - 📞 Contact info
     """)
     st.divider()
     st.caption("Answers are based only on official university documents. For urgent matters, contact the admin office directly.")
