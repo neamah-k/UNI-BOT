@@ -5,7 +5,12 @@ __pycache__/
 
 #Intermediate files (used for testing)
 cleaned_docx/
+cleaned_text/
 chunks/
+chunker.py
+docx_to_txt.py
+embed_and_store.py
+rag_query.py
 
 #OS files
 .DS_Store
