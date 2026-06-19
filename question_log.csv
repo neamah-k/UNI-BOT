@@ -1,15 +1,10 @@
 timestamp,question,answered,answer_preview,feedback
-2026-05-13 10:21:06,What is the application fee?,YES,"The application fee for FAST-NUCES university is **Rs. 3,000**. [Source: Admission Information.txt — Pay application fee: Rs. 3000]",
-2026-05-13 10:21:17,is it refundable?,YES,"The Admission Fee is **never** refundable. [Source: Fee Information.pdf.txt — 4. Fee Refund Policy], [Source: Fee Information.txt — 4. Fee Refund Poli",helpful
-2026-05-13 10:21:31,What happens if I withdraw from the program?,YES,"If you withdraw from the program, the grade 'W: Withdrawn' will be assigned to you, and it will have **no impact** on your GPA. [Source: Academic Rule",helpful
-2026-05-13 10:22:10,tell me about the online class policy,NO,I don't have that information. Please contact the admin office directly.,not_helpful
-2026-05-13 10:23:04,tell me the email. i will ask them,YES,"I don't have the email address of the admin office. However, you can contact them through the university's official website:  * Visit [www.nu.edu.pk](",
-2026-05-13 10:38:26,does karachi campus have email,YES,"**Yes**, the Karachi Campus of FAST-NUCES has an email address for admission queries.  You can contact them at: admissions.khi@nu.edu.pk.  [Source: Co",helpful
-2026-05-13 13:03:13,What is the fee structure?,YES,"**Fee Structure:** The fee structure at FAST-NUCES consists of One-Time Admission Charges, Recurring Semester Fees, and Miscellaneous Service Fees.  #",helpful
-2026-05-13 13:14:55,where is fast,YES,"Unfortunately, I don't have any information about the location of FAST-NUCES in the provided sources. The closest information is [Source 4: Admission ",not_helpful
-2026-05-13 20:09:53,What programs are offered?,YES,"According to the admission information provided, the university offers various programs at different levels:  * Bachelor programs * MS (Master of Scie",
-2026-05-13 20:10:34,What programs are offered?,YES,"According to the sources provided, the following programs are mentioned:  * Bachelor programs [Source: Admission Information.txt — Applicants can appl",
-2026-05-13 20:11:48,What is the fee structure?,YES,"The fee structure for FAST-NUCES university consists of the following components:  ### **One-Time Admission Charges** * Admission Fee: **Rs. 30,000** ",helpful
-2026-05-13 20:38:27,tell me the contact for islamabad campus,YES,You can contact the Islamabad Campus of FAST-NUCES university at:  * Phone numbers: **(051) 111 128 128** or **(051) 831 4100-29**    or you can email,
-2026-05-13 20:38:44,How many campuses are there in Islamabad?,NO,"I don't have that information. Please contact the admin office directly.  However, according to the sources provided, the Islamabad Campus is specifie",
-2026-05-14 08:29:16,what scholarships are these,YES,### Available Scholarships  There are several scholarship programs available:  * **Merit Scholarship for Bachelors**: For the top **3** position holde,helpful
+2026-06-19 15:01:45,What programs are offered?,YES,"FAST-NUCES offers a variety of programs. However, the specific details of the programs are not provided in the sources. Therefore, I would recommend c",helpful
+2026-06-19 15:02:13,Is it necessary to have a GRE score if I'm applying for a specific MS program?,YES,"According to **Source 2: Admission Information.txt**, for **MS, MBA, PhD programs**, the following tests are accepted: * GAT Subject * GRE (General) *",
+2026-06-19 15:02:50,what about the admission dates?,YES,"**Admission Schedule for 2025** is available in **Source 3: Admission Schedule for 2025.txt**. However, it appears that this is the admission schedule",
+2026-06-19 15:03:13,Is there a different admission schedule for 2026?,NO,"Unfortunately, I do not have any information about a admission schedule for 2026 from the sources you provided. You could look on the FAST-NUCES websi",
+2026-06-19 15:03:26,What is the contact number for the admin office?,YES,"I can help with that. **Source 2: Contact info.txt** lists the phone numbers for each campus, but it does not explicitly mention the contact number fo",
+2026-06-19 15:03:51,ok tell me their number,YES,**Source 1: Contact info.txt** lists the contact numbers for each campus:  * Islamabad Campus: (051) 111 128 128 or (051) 831 4100-29 * Lahore Campus:,helpful
+2026-06-19 15:04:07,Are these contact numbers available 24/7?,YES,"No, the contact numbers listed in **Source 2: Contact info.txt** are not available 24/7. **Source 1: Contact info.txt** mentions that the university i",
+2026-06-19 15:04:33,"ok how about the online classes, are the fees same for the online classes or nont",NO,I don't have any information about the fees for online classes.,not_helpful
+"2026-06-19 15:14:35","tell me about the badminton in the campus","NO","I don't have any information about badminton facilities in the campuses of FAST-NUCES university. The source mentions recreation facilities on the Chi",""

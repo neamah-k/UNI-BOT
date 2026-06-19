@@ -2,4 +2,11 @@
 .env
 __pycache__/
 *.pyc
-chroma_db/
+
+#Intermediate files (used for testing)
+cleaned_docx/
+chunks/
+
+#OS files
+.DS_Store
+Thumbs.db

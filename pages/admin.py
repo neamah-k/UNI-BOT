@@ -90,7 +90,7 @@ hr { border-color: #2d1f4a !important; }
 
 </style>
 
-""", unsafe_allow_html=True)
+""", unsafe_allow_html=True) 
 
 
 # ── Load resources ──
@@ -102,6 +102,15 @@ def load_resources():
 
 embed_model, collection = load_resources()
 
+@st.cache_data(ttl=0)
+def load_log():
+    log_path = "question_log.csv"
+    if not os.path.isfile(log_path):
+        return None
+    df = pd.read_csv(log_path, on_bad_lines="skip", engine="python", quoting=1)
+    if "feedback" not in df.columns:
+        df["feedback"] = ""
+    return df
 
 # ── Helpers ──
 def extract_text_from_docx(file) -> str:
@@ -176,9 +185,11 @@ st.divider()
 # Stats + refresh
 col_stat, col_btn = st.columns([4, 1])
 with col_btn:
-    if st.button("🔄 Refresh"):
-        st.cache_resource.clear()
-        st.rerun()
+    with col_btn:
+        if st.button("🔄 Refresh"):
+            st.cache_resource.clear()
+            st.cache_data.clear()
+            st.rerun()
 try:
     total = collection.count()
     with col_stat:
@@ -267,12 +278,9 @@ st.markdown("### ❓ Unanswered Questions")
 st.caption("Questions where UniBot said it didn't have information — use these to identify document gaps.")
 
 import pandas as pd
-log_path = "question_log.csv"
+df = load_log()
 
-if os.path.isfile(log_path):
-    df = pd.read_csv(log_path, on_bad_lines="skip", engine="python", quoting=1)
-    if "feedback" not in df.columns:
-        df["feedback"] = ""
+if df is not None:
     unanswered = df[df["answered"] == "NO"]
 
     if unanswered.empty:

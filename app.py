@@ -1,4 +1,5 @@
 """
+    pip install -r requirements.txt
     streamlit run app.py
 """
 
@@ -39,7 +40,6 @@ html, body, [class*="css"] { font-family: 'Inter', sans-serif !important; }
     max-width: 750px !important;
 }
 
-/* Title — orange-red gradient */
 h1 {
     font-family: 'Syne', sans-serif !important;
     font-size: 2rem !important;
@@ -65,7 +65,6 @@ hr { border-color: #2d1f4a !important; margin: 0.75rem 0 1.25rem !important; }
     gap: 0.75rem !important;
 }
 
-/* User bubble — purple */
 [data-testid="stChatMessageAvatarUser"] ~ div .stMarkdown {
     background: linear-gradient(135deg, #2a1045, #3d1f6e) !important;
     border: 1px solid #5a2d9a !important;
@@ -77,7 +76,6 @@ hr { border-color: #2d1f4a !important; margin: 0.75rem 0 1.25rem !important; }
     box-shadow: 0 2px 12px rgba(90,45,154,0.4) !important;
 }
 
-/* Assistant bubble — dark purple card */
 [data-testid="stChatMessageAvatarAssistant"] ~ div .stMarkdown {
     background: #1e1030 !important;
     border: 1px solid #3a2060 !important;
@@ -224,9 +222,9 @@ div[data-testid="stButton"] button[kind="secondary"]:hover {
 def load_resources():
     embed_model = SentenceTransformer("all-MiniLM-L6-v2")
     chroma      = chromadb.PersistentClient(path=CHROMA_DIR)
-    collection  = chroma.get_collection("university_docs")
-    groq_client = Groq(api_key=GROQ_API_KEY)
-    return embed_model, collection, groq_client
+    collection  = chroma.get_collection("university_docs") 
+    groq_client = Groq(api_key=GROQ_API_KEY) 
+    return embed_model, collection, groq_client 
 
 embed_model, collection, groq_client = load_resources()
 
@@ -238,25 +236,40 @@ def retrieve(question: str) -> list[dict]:
     # it looks for vectors that are "geometrically close" to the question's vector
     chunks = []
     for doc, meta in zip(results["documents"][0], results["metadatas"][0]): # data unpacking
-        chunks.append({
+        chunks.append({  
             "text"    : doc,
             "source"  : meta["source"],
             "section" : meta["section"],
             "category": meta["category"],
         })
     return chunks
+def is_valid_question(question: str) -> bool:
+    """Reject empty, too short, or obviously nonsense inputs."""
+    q = question.strip()
+    if len(q) < 3:
+        return False
+    if q in ["?", "??", "!", "...", "lol", "ok", "hi", "hello", "hey"]:
+        return False
+    return True
 
 HISTORY_TURNS = 4  # number of past exchanges to pass as memory
 
 def build_messages(question: str, chunks: list[dict]) -> list[dict]:
-    """Build messages array with conversation history for memory."""
+    """Build messages array with conversation history for memory.""" 
     ctx = ""
     for i, chunk in enumerate(chunks, 1):
         ctx += f"[Source {i}: {chunk['source']} — {chunk['section']}]\n{chunk['text']}\n\n"
 
-    system = f"""You are a helpful university helpdesk assistant for FAST-NUCES university.
-Answer the student's question using ONLY the information provided in the sources below.
-If the answer is not in the sources, say: "I don't have that information. Please contact the admin office directly."
+    system = f"""You are a strict university helpdesk assistant for FAST-NUCES university.
+Your ONLY job is to answer questions related to FAST-NUCES university topics such as admissions, fees, scholarships, programs, schedules, rules, facilities, and faculty.
+
+If the student's question is unrelated to the university (e.g. general knowledge, coding help, jokes, current events, personal advice), respond with:
+"I can only answer questions about FAST-NUCES university. Please ask me about admissions, fees, programs, or other university matters."
+
+If the question is university-related but the answer is not in the sources below, say:
+"I don't have that information. Please contact the admin office directly."
+
+Otherwise, answer using ONLY the information provided in the sources below.
 Format your response clearly using markdown:
 - **Bold** for important values like fees, deadlines, percentages, and key terms
 - Bullet points for lists of items or steps
@@ -279,7 +292,7 @@ Note: If the question is about merit, grades, or admission calculation, look car
 
 
 def ask(question: str) -> tuple[str, list[dict]]:
-    chunks   = retrieve(question)
+    chunks = retrieve(question)
     messages = build_messages(question, chunks)
 
     # Stream response token by token
@@ -313,9 +326,12 @@ Example: ["Question 1?", "Question 2?", "Question 3?"]"""
 
 def log_question(question: str, answer: str):
     log_file    = "question_log.csv"
-    unanswered  = "i don't have that information" in answer.lower()
+    unanswered  = (
+        "i don't have that information" in answer.lower() or
+        "i can only answer questions about fast-nuces" in answer.lower() or
+        "I can only answer questions about FAST-NUCES university. Please ask me about admissions, fees, programs, or other university matters." 
+    )
     file_exists = os.path.isfile(log_file)
-
     with open(log_file, "a", newline="", encoding="utf-8") as f:
         writer = csv.writer(f, quoting=csv.QUOTE_ALL)
         if not file_exists:
@@ -325,7 +341,7 @@ def log_question(question: str, answer: str):
             question,
             "NO" if unanswered else "YES",
             answer[:150].replace("\n", " "),
-            ""   # empty feedback column, filled later by log_feedback()
+            ""
         ])
 
 def detect_category(chunks: list[dict]) -> str:
@@ -452,61 +468,68 @@ if typed := st.chat_input("Ask about fees, admissions, scholarships, rules..."):
     question = typed
 
 if question:
+    if not is_valid_question(question):
+        st.session_state.messages.append({"role": "user", "content": question})
+        with st.chat_message("user"):
+            st.markdown(question)
+        with st.chat_message("assistant"):
+            st.markdown("Please type a valid question about FAST-NUCES university.")
+        st.session_state.messages.append({"role": "assistant", "content": "Please type a valid question about FAST-NUCES university."})
+    else:
+        # Show user message
+        st.session_state.messages.append({"role": "user", "content": question})
+        with st.chat_message("user"):
+            st.markdown(question)
 
-    # Show user message
-    st.session_state.messages.append({"role": "user", "content": question})
-    with st.chat_message("user"):
-        st.markdown(question)
+        # Get and show bot response
+        with st.chat_message("assistant"):
+            with st.spinner("Searching documents..."):
+                stream, chunks = ask(question)
 
-    # Get and show bot response
-    with st.chat_message("assistant"):
-        with st.spinner("Searching documents..."):
-            stream, chunks = ask(question)
+            # Stream tokens live — no st.markdown needed
+            answer = st.write_stream(
+                chunk.choices[0].delta.content or ""
+                for chunk in stream
+                if chunk.choices[0].delta.content
+            )
 
-        # Stream tokens live — no st.markdown needed
-        answer = st.write_stream(
-            chunk.choices[0].delta.content or ""
-            for chunk in stream
-            if chunk.choices[0].delta.content
-        )
+            category  = detect_category(chunks)
+            followups = get_followups(question, answer)
+            log_question(question, answer)
 
-        followups = get_followups(question, answer)
-        log_question(question, answer)
+            msg_index = len(st.session_state.messages)
+            st.session_state.sources[msg_index]    = chunks
+            st.session_state.followups[msg_index]  = followups
+            st.session_state.categories[msg_index] = category
+            st.session_state.messages.append({"role": "assistant", "content": answer})
 
-        msg_index = len(st.session_state.messages)
-        category  = detect_category(chunks)
-        st.session_state.sources[msg_index]    = chunks
-        st.session_state.followups[msg_index]  = followups
-        st.session_state.categories[msg_index] = category
-        st.session_state.messages.append({"role": "assistant", "content": answer})
+            st.markdown(f'<div class="cat-tag cat-{category}">📁 {category}</div>', unsafe_allow_html=True)
 
-        st.markdown(f'<div class="cat-tag cat-{category}">📁 {category}</div>', unsafe_allow_html=True)
+            fb_col1, fb_col2, _ = st.columns([1, 1, 8])
+            with fb_col1:
+                if st.button("👍", key="up_new"):
+                    st.session_state.feedback[msg_index] = "👍 Helpful"
+                    log_feedback(question, "helpful")
+                    st.rerun()
+            with fb_col2:
+                if st.button("👎", key="dn_new"):
+                    st.session_state.feedback[msg_index] = "👎 Not helpful"
+                    log_feedback(question, "not_helpful")
+                    st.rerun()
 
-        fb_col1, fb_col2, _ = st.columns([1, 1, 8])
-        with fb_col1:
-            if st.button("👍", key="up_new"):
-                st.session_state.feedback[msg_index] = "👍 Helpful"
-                log_feedback(question, "helpful")
-                st.rerun()
-        with fb_col2:
-            if st.button("👎", key="dn_new"):
-                st.session_state.feedback[msg_index] = "👎 Not helpful"
-                log_feedback(question, "not_helpful")
-                st.rerun()
-
-        with st.expander("📄 Sources used"):
-            for chunk in chunks:
-                st.markdown(f"**{chunk['source']}** — *{chunk['section']}*")
-                st.caption(chunk["text"][:200] + "...")
-                st.divider()
-        if followups:
-            st.markdown("<p style='color:#484f58; font-size:0.72rem; text-transform:uppercase; letter-spacing:0.08em; margin-top:0.8rem;'>You might also ask</p>", unsafe_allow_html=True)
-            fu_cols = st.columns(len(followups))
-            for fi, fq in enumerate(followups):
-                with fu_cols[fi]:
-                    if st.button(fq, key=f"fu_new_{fi}", use_container_width=True):
-                        st.session_state.faq_trigger = fq
-                        st.rerun()
+            with st.expander("📄 Sources used"):
+                for chunk in chunks:
+                    st.markdown(f"**{chunk['source']}** — *{chunk['section']}*")
+                    st.caption(chunk["text"][:200] + "...")
+                    st.divider()
+            if followups:
+                st.markdown("<p style='color:#484f58; font-size:0.72rem; text-transform:uppercase; letter-spacing:0.08em; margin-top:0.8rem;'>You might also ask</p>", unsafe_allow_html=True)
+                fu_cols = st.columns(len(followups))
+                for fi, fq in enumerate(followups):
+                    with fu_cols[fi]:
+                        if st.button(fq, key=f"fu_new_{fi}", use_container_width=True):
+                            st.session_state.faq_trigger = fq
+                            st.rerun()
 
 # Sidebar
 with st.sidebar:
