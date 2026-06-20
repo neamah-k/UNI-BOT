@@ -16,11 +16,6 @@ import subprocess
 import sys
 from pathlib import Path
 
-# Rebuild ChromaDB on first run if it doesn't exist (for fresh deployments)
-if not Path("chroma_db/chroma.sqlite3").exists():
-    with st.spinner("First-time setup: building knowledge base... (this takes 1-2 minutes)"):
-        subprocess.run([sys.executable, "startup.py"], check=True)
-
 # --- Config ---
 load_dotenv()
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")

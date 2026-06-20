@@ -3,9 +3,8 @@ title: UniBot
 emoji: 🎓
 colorFrom: purple
 colorTo: blue
-sdk: streamlit
-sdk_version: "1.57.0"
-app_file: app.py
+sdk: docker
+app_port: 7860
 pinned: false
 ---
 
