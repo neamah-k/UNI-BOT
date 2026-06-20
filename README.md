@@ -3,9 +3,11 @@ title: UniBot
 emoji: 🎓
 colorFrom: purple
 colorTo: blue
-sdk: docker
-app_port: 7860
+sdk: streamlit
+sdk_version: "1.40.0"
+app_file: app.py
 pinned: false
+startup_duration_timeout: 30m
 ---
 
 # UniBot — AI Helpdesk for FAST-NUCES

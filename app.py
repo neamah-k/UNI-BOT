@@ -29,6 +29,15 @@ st.set_page_config(
     layout     = "centered"
 )
 
+import subprocess
+import sys
+from pathlib import Path
+
+if not Path("chroma_db/chroma.sqlite3").exists():
+    with st.spinner("First-time setup: building knowledge base... (this takes 2-3 minutes)"):
+        subprocess.run([sys.executable, "chunker.py"], check=True)
+        subprocess.run([sys.executable, "embed_and_store.py"], check=True)
+
 # --- CSS
 st.markdown("""
 <style>
