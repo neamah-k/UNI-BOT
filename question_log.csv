@@ -8,3 +8,5 @@ timestamp,question,answered,answer_preview,feedback
 2026-06-19 15:04:07,Are these contact numbers available 24/7?,YES,"No, the contact numbers listed in **Source 2: Contact info.txt** are not available 24/7. **Source 1: Contact info.txt** mentions that the university i",
 2026-06-19 15:04:33,"ok how about the online classes, are the fees same for the online classes or nont",NO,I don't have any information about the fees for online classes.,not_helpful
 "2026-06-19 15:14:35","tell me about the badminton in the campus","NO","I don't have any information about badminton facilities in the campuses of FAST-NUCES university. The source mentions recreation facilities on the Chi",""
+"2026-06-20 13:25:28","hello how r u","NO","I can only answer questions about FAST-NUCES university. Please ask me about admissions, fees, programs, or other university matters.",""
+"2026-06-20 13:25:57","tell me about the admission fees","NO","**Admission Fees** at FAST-NUCES university are as follows:  * **One-Time Admission Charges**:   * Admission Fee: **Rs. 30,000** (payable once at the ",""
