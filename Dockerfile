@@ -34,4 +34,8 @@ RUN useradd -m -u 1000 user
 USER user
 ENV HOME=/home/user
 
-CMD ["streamlit", "run", "app.py", "--server.port=7860", "--server.address=0.0.0.0"]
+HEALTHCHECK --interval=30s --timeout=30s --start-period=120s --retries=3 \
+    CMD curl -f http://localhost:7860/_stcore/health || exit 1
+
+CMD streamlit run app.py --server.port=7860 --server.address=0.0.0.0 --server.headless=true --server.enableCORS=false --server.enableXsrfProtection=false
+
