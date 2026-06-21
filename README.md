@@ -115,3 +115,6 @@ Use the admin panel (`/admin`) to upload `.docx` or `.txt` files directly — th
 ## Notes
 
 This project was built as an AI course project demonstrating a complete RAG pipeline: document ingestion, semantic chunking, vector embedding, retrieval, and LLM-based generation with source grounding.
+
+## License
+This project is open source and available under the [MIT License](LICENSE).
