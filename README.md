@@ -91,8 +91,7 @@ This app is deployed on **Streamlit Community Cloud**. To deploy your own copy:
    ```toml
    GROQ_API_KEY = "your-key-here"
    ```
-5. A `runtime.txt` file (pinned to `python-3.11`) is included to avoid compatibility issues with newer Python versions
-6. On first load, the app automatically builds the ChromaDB knowledge base from `cleaned_text/` (takes 2-3 minutes); subsequent loads are instant
+5. On first load, the app automatically builds the ChromaDB knowledge base from `cleaned_text/` (takes 2-3 minutes); subsequent loads are instant
 
 ## Project Structure
 
