@@ -3,6 +3,7 @@
 __pycache__/
 *.pyc
 
+# Vector database (regenerate with chunker.py and embed_and_store.py)
 chroma_db/
 
 #Intermediate files (used for testing)

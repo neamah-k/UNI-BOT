@@ -16,6 +16,10 @@ import subprocess
 import sys
 from pathlib import Path
 
+import json
+
+from collections import Counter
+
 # --- Config ---
 load_dotenv()
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
@@ -28,10 +32,6 @@ st.set_page_config(
     page_icon  = "🎓",
     layout     = "centered"
 )
-
-import subprocess
-import sys
-from pathlib import Path
 
 if not Path("chroma_db/chroma.sqlite3").exists():
     with st.spinner("First-time setup: building knowledge base... (this takes 2-3 minutes)"):
@@ -328,21 +328,20 @@ Example: ["Question 1?", "Question 2?", "Question 3?"]"""
         model    = "llama-3.1-8b-instant",
         messages = [{"role": "user", "content": prompt}]
     )
-    import json
+    
     try:
         text = response.choices[0].message.content.strip()
         # Strip markdown fences if present
         text = text.replace("```json", "").replace("```", "").strip()
         return json.loads(text)
-    except:
+    except (json.JSONDecodeError, AttributeError, IndexError):
         return []
 
 def log_question(question: str, answer: str):
     log_file    = "question_log.csv"
     unanswered  = (
         "i don't have that information" in answer.lower() or
-        "i can only answer questions about fast-nuces" in answer.lower() or
-        "I can only answer questions about FAST-NUCES university. Please ask me about admissions, fees, programs, or other university matters." 
+        "i can only answer questions about fast-nuces" in answer.lower()
     )
     file_exists = os.path.isfile(log_file)
     with open(log_file, "a", newline="", encoding="utf-8") as f:
@@ -358,7 +357,6 @@ def log_question(question: str, answer: str):
         ])
 
 def detect_category(chunks: list[dict]) -> str:
-    from collections import Counter
     cats = [c["category"] for c in chunks]
     return Counter(cats).most_common(1)[0][0] if cats else "General"
 
